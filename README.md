@@ -1,5 +1,3 @@
 # trabajoIntegrador
-Esta página está dirigida directamente a una escuela primaria con algunos requisitos claros y otros relativos. 
-El proyecto se encuentra en desarrollo. 
-Responsive completo.
-Falta revisión.
+Página creada en base al paradigma Mobile First.
+Puede que haya código en exceso en un fiel intento de aprender a crear sin frameworks. 
