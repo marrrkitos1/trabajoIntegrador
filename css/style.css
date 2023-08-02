@@ -233,6 +233,9 @@ section {
     grid-area: footer;
     background-color: #00425A;
     color: #EFF5F5;
+}
+
+.footer-form {
     position: fixed;
     bottom: 0; 
     width: 100%;
