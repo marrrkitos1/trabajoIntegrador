@@ -1,0 +1,555 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.body {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr repeat(5);
+    grid-template-columns: 1fr repeat(3);
+    grid-template-areas:
+        "header header header"
+        "section section section"
+        "section section section"
+        "main main main"
+        "footer footer footer";
+}
+
+.body-form {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    position: sticky;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #00425A;
+}
+
+.nav-item {
+    font-size: 3.5vw;
+}
+
+.navbar-toggler {
+    filter: invert();
+    font-size: 4.2vw;
+}
+
+.navbar-brand {
+    font-size: 4.5vw;
+}
+
+.dropdown-menu {
+    background-color: #00425A;
+    border-color: #ffffff;
+    font-size: 3.5vw;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    grid-area: main;
+}
+
+.main-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.main-contact form {
+    width: 100%;
+    margin: 2vw;
+}
+
+.form-control {
+    width: 100%;
+    height: 8vw;
+}
+
+.form-label {
+    font-size: 4.5vw;
+}
+
+.form-text {
+    font-size: 4vw;
+}
+
+.btn {
+    background-color: #181823;
+    border-color: #000000;
+    font-size: 4vw;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+
+.card-text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.card-body {
+    width: 100%;
+    border-radius: 2vw;
+}
+
+.card-body h3 {
+    background-color: #FC7300;
+    text-align: center;
+    border-radius: 2vw;
+    color: #000000;
+    padding: 1vw;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 50vw;
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
+}
+
+.card-text {
+    height: auto;
+    background-color: #1F8A70;
+    border-bottom-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    padding: 4vw;
+    color: #EFF5F5;
+    font-size: 2.5vw;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw;
+    width: 100%;
+    height: auto;
+}
+
+.materia {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2vw;
+}
+
+.materia h1 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #181823;
+    background-color: #eff5f5ec;
+    padding: 1vw;
+    border-radius: 2vw;
+}
+
+#historia {
+    background-image: url(../docs/multimedia/img/historia_propuesta_educativa.jpg);
+}
+
+#arte {
+    background-image: url(../docs/multimedia/img/arte_propuesta_educativa.jpg);
+}
+
+#programacion {
+    background-image: url(../docs/multimedia/img/programación_propuesta_educativa.jpg);
+}
+
+#ciencias {
+    background-image: url(../docs/multimedia/img/ciencia_propuesta_educativa.jpg);
+}
+
+.noticia {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2vw;
+}
+
+.noticia h1 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #181823;
+    background-color: #eff5f5ec;
+    padding: 1vw;
+    border-radius: 2vw;
+}
+
+#soundtrack {
+    background-image: url(../docs/multimedia/img/radio_noticia.jpg);
+}
+
+#conferencia {
+    background-image: url(../docs/multimedia/img/conferencias_noticia.jpg);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #00425A;
+    color: #EFF5F5;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+}
+
+.footer_containers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bi {
+    font-size: 3.5vw;
+    color: #EFF5F5;
+    padding: 1vw;
+}
+
+.container {
+    display: flex;
+    font-size: 1vw;
+    justify-content: center;
+}
+
+.container_center h1 {
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        margin: 2vw;
+        padding-left: 7vw;
+        padding-right: 7vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        width: 100%;
+    }
+    .card-body h3{
+        margin-bottom: 3vw;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 40vw;
+    }
+    .galeria {
+        grid-gap: 2vw;
+    }
+    .noticia h1 {
+        font-size: 4vw;
+    }
+    .materia h1{
+        font-size: 4vw;
+    }
+
+    .main-contact {
+        margin-top: 0;
+        height: 50%;
+    }
+
+    .main-contact form {
+        width: 100%;
+        height: auto;
+    }
+    
+    .form-control {
+        width: 100%;
+        height: 5vw;
+    }
+    
+    .form-label {
+        font-size: 2.5vw;
+    }
+    
+    .form-text {
+        font-size: 1.8vw;
+    }
+    
+    .btn {
+        font-size: 2vw;
+    }
+
+    .footer {
+        grid-area: footer;
+        height: 12.5vw;
+    }
+    
+    .footer_containers {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .bi {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+    
+    .container {
+        display: flex;
+        font-size: 2vw;
+        justify-content: center;
+    }
+    
+    .container_center h1 {
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1080px) {  
+
+    .nav-item {
+        font-size: 1.5vw;
+    }
+    
+    .navbar-toggler {
+        filter: invert();
+        font-size: 2.2vw;
+    }
+    
+    .navbar-brand {
+        font-size: 2.5vw;
+    }
+    
+    .dropdown-menu {
+        font-size: 1.5vw;
+    }
+    
+    .main-contact {
+        margin-top: 0;
+        height: 50%;
+    }
+
+    .main-contact form {
+        width: 100%;
+        height: auto;
+    }
+    
+    .form-control {
+        width: 100%;
+        height: 4vw;
+    }
+    
+    .form-label {
+        font-size: 1.8vw;
+    }
+    
+    .form-text {
+        font-size: 1.2vw;
+    }
+    
+    .btn {
+        font-size: 1.5vw;
+    }
+    
+    section {
+        width: 100%;
+        padding: 4vw;
+    }
+    
+    .card {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 2vw;
+        padding-top: 2vw;
+        height: 80%;
+    }
+
+    .card-body h3 {
+        grid-area: titulo;
+        padding: 1vw;
+        font-size: 3vw;
+    }
+
+    .abc {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr repeat(2);
+        grid-template-columns: 1fr repeat(3);
+    }
+
+    .card-img-top {
+        grid-area: img-card;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-text {
+        grid-area: text-card;
+        height: auto;
+        padding: 2vw;
+        font-size: 1.5vw;
+    }
+    
+    #quienes_somos .abc {
+        grid-template-areas:
+            "titulo titulo titulo"
+            "img-card img-card text-card";
+    }
+
+    #quienes_somos .card-img-top{
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 2vw;
+        border-bottom-right-radius: 0;
+    }
+
+    #quienes_somos .card-text {
+        border-top-left-radius: 0;
+        border-top-right-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+        border-bottom-left-radius: 0;
+    }
+
+    #por_que_elegirnos .abc {
+        grid-template-areas:
+            "titulo titulo titulo"
+            "text-card img-card img-card";
+    }
+    
+    #por_que_elegirnos .card-img-top{
+            border-top-left-radius: 0;
+            border-top-right-radius: 2vw;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 2vw;
+    }
+    
+    #por_que_elegirnos .card-text {
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 2vw;
+    }
+    
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2vw;
+        width: 100%;
+        height: auto;
+    }
+    
+    .materia {
+        width: 100%;
+        height: 30vw;
+        border-radius: 2vw;
+    }
+
+    .materia h1 {
+        font-size: 2.5vw;
+        padding: 1vw;
+        border-radius: 2vw;
+    }
+
+    .materia h1:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    
+    .noticia {
+        width: 100%;
+        height: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 2vw;
+    }
+
+    .noticia h1 {
+        font-size: 2.5vw;
+        font-weight: bold;
+        color: #181823;
+        background-color: #eff5f5ec;
+        padding: 1vw;
+        border-radius: 2vw;
+    }
+
+    .noticia h1:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    
+    .footer {
+        grid-area: footer;
+        height: 9vw;
+    }
+    
+    .footer_containers {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .bi {
+        font-size: 2vw;
+        padding: 1vw;
+    }
+    
+    .container {
+        display: flex;
+        font-size: 1vw;
+        justify-content: center;
+    }
+    
+    .container_center h1 {
+        font-size: 3vw;
+        display: flex;
+        align-items: center;
+    }
+}
